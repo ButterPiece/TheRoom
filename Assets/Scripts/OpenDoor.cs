@@ -8,8 +8,8 @@ public class OpenDoor : MonoBehaviour
     public Animator anim;
 
     private void Start()
-    {
-        anim=GetComponentInParent<Animator>();
+    {   
+        anim=GameObject.FindGameObjectWithTag("Door").GetComponentInParent<Animator>();
     }
     private void OnTriggerEnter(Collider other)
     {

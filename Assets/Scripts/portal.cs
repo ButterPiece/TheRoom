@@ -7,6 +7,7 @@ public class portal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Huy");
         GameObject.FindGameObjectWithTag("Player").transform.position= _outPort.position;
         //other.transform.position = _outPort.position;
         float rotY = _outPort.rotation.eulerAngles.y;
